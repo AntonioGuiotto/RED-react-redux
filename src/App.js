@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Content from './components/Content/Content'
+import Content1 from './components/Content1/Content1'
+
+import { Provider } from 'react-redux';
+import store from './store';
+
 import './App.css';
 
+
+
 class App extends Component {
+  
+  componentDidMount() {
+    setTimeout(()=>{
+      const el = document.querySelector('.subtitle');
+      el.setAttribute('style','top:0;');
+    }, 1200)
+  }
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Provider store={store}>
+        <div className="App">
+          <Content count={this.props.counter}/>
+          <Content1 
+            incrementCounter={this.handleIncrement}
+            decrementCounter={this.handleDecrement}
+            />
+        </div>
+      </Provider>
     );
   }
 }

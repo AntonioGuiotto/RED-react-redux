@@ -1,0 +1,23 @@
+import { INCREMENT, DECREMENT } from '../actions/types'
+
+const initialState = {
+    count: null
+}
+export default function(state = initialState, action) {
+    switch (action.type) {
+        case INCREMENT:
+            return {
+                ...state,
+                count: state.count + 1
+            };
+            break;
+        case DECREMENT:
+            return {
+                ...state,
+                count: state.count - 1
+            };
+            break; 
+        default:
+            return state;
+    }
+}
