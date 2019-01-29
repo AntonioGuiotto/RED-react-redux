@@ -4,7 +4,7 @@ import './Content1.css'
 
 function Content1(props) {
 
-  console.log(props)
+  console.log(props.count)
 
   const increment = function() {
     props.increment()
@@ -33,7 +33,11 @@ function Content1(props) {
       </div>
       <div className="buttons">
         <button onClick={increment}>Increment</button>
-        {(props === 0) ? <button onClick={decrement} disabled>Decrement</button> : <button onClick={decrement}>Decrement</button>}
+        {(props.count === 0 || props.count === null) 
+        ? 
+        <button onClick={decrement} disabled>Decrement</button> 
+        : 
+        <button onClick={decrement}>Decrement</button>}
       </div>
     </div>
   )
@@ -41,7 +45,7 @@ function Content1(props) {
 
 function mapStateToProps(state) {
   return {
-    count: state.count
+    count: state.counter.count
   };
 }
 
