@@ -1,0 +1,71 @@
+.div {
+  overflow: hidden;
+  padding: 0 30px 0 20px;
+  display: flex;
+
+}
+
+.subtitle {
+  background-color: transparent;
+  position: relative;
+  top: 200px;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 0 0 20px;
+
+}
+.subtitle h3 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+}
+.div h1 {
+  margin: 0;
+  color: white;
+  font-size: 8rem;
+  animation: mymove 1.5s;
+  position: relative;
+  font-weight: 900;
+  text-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+@keyframes mymove {
+  from {top: -200px;}
+  to {top: 0px;}
+}
+
+
+.header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    margin: 0 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter span {
+    transition: .5s;
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+}
+.counter p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}

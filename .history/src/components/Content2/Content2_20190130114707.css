@@ -1,0 +1,24 @@
+.content2 {
+    background-color: #fff;
+    color: red;
+    padding: 15px 18px;
+    margin: 10px 0;
+    font-weight: 100;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+}
+.content2 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches';
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+#pizze {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    
+}
