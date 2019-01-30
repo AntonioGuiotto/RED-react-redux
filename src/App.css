@@ -1,9 +1,12 @@
 body {
-  background: red url('https://es6.io/images/NODE/bank-note.svg');
+  /* background: red url('https://es6.io/images/NODE/bank-note.svg'); */
+  background: url('./bg_01.jpg');
+  background-attachment: fixed;
+  background-size: cover; 
+  font-family: 'Staatliches';
 }
 .App {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 

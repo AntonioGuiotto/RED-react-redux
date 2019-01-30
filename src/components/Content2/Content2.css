@@ -1,5 +1,7 @@
 .content2 {
-    background-color: #fff;
+    background-color: rgba(0,0,0,0.75);
+    border: 3px solid black;
+    border-radius: 5px;
     color: red;
     padding: 15px 18px;
     margin: 10px 0;
@@ -23,10 +25,13 @@
     padding: 0;
     margin: 0;
 }
-#pizze {
-    display: flex;
-    justify-content: space-around;
+#avatars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
 }
-.card {
-    
+
+.content2 .card img {
+    width: 100px;
 }
+

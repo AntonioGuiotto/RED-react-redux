@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: rgba(0,0,0,0.75);
+    border: 3px solid black;
+    border-radius: 5px;
     min-height: 300px;
     padding: 15px 18px;
-    color: #555;
     font-weight: 100;
     box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
 }
